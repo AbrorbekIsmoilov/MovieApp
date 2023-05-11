@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/white"
+    tools:context=".MainActivity2">
+    <EditText
+        android:id="@+id/movieName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@color/black"
+        android:paddingStart="15dp"
+        android:background="@drawable/edt_card"
+        android:hint="Movie name"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        tools:ignore="RtlSymmetry" />
+    <EditText
+        android:id="@+id/movieAuthors"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:background="@drawable/edt_card"
+        android:hint="Movie authors"
+        android:layout_marginBottom="20dp"
+        tools:ignore="RtlSymmetry" />
+    <EditText
+        android:id="@+id/movieAbout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:gravity="top|left"
+        android:paddingTop="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edt_card"
+        android:hint="About movie"
+        android:layout_marginBottom="20dp"
+        tools:ignore="RtlSymmetry" />
+    <EditText
+        android:id="@+id/movieData"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edt_card"
+        android:hint="Movie data"
+        android:textSize="20sp"
+        android:inputType="datetime"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        tools:ignore="RtlSymmetry" />
+    <Button
+        android:id="@+id/movieSave"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:layout_marginStart="120dp"
+        android:backgroundTint="#66D6EF"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

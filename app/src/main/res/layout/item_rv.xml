@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="24sp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="Abrorbek"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieData"
+        android:layout_width="wrap_content"
+        android:layout_height="18sp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="20dp"
+        android:text="01.01.2020"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="Ismoilov Abrorbek Karimjon o'g'li"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieData" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/movieEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="183dp"
+        android:layout_marginTop="5dp"
+        android:text="Edit"
+       android:backgroundTint="#66D6EF"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieAbout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/movieDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#66D6EF"
+        android:text="delete"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/movieEdit"
+        app:layout_constraintTop_toBottomOf="@+id/movieAbout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B35B5959"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
